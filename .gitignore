@@ -1,3 +1,5 @@
 .idea
 venv
 *.txt
+cache
+__pycache__
