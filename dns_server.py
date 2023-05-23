@@ -2,6 +2,7 @@ import socket
 import dnslib
 import pickle
 import time
+from argparse import ArgumentParser
 from pathlib import Path
 from collections import defaultdict
 
@@ -9,10 +10,11 @@ AUTHORITATIVE_SERVER = '213.180.193.1'  # ns1.yandex.ru
 
 
 class DNSServer:
-    def __init__(self, port, cache_path: Path):
+    def __init__(self, port, auth_server, cache_path: Path):
         self.cache_path = cache_path
         self.cache = self._init_cache()
         self.port = port
+        self.auth_server = auth_server
 
     def _init_cache(self):
         try:
@@ -65,7 +67,7 @@ class DNSServer:
             response.rr.extend(cache_response)
             print(f'{key} from cache')
             return response.pack()
-        response = query.send(AUTHORITATIVE_SERVER, 53, timeout=4)
+        response = query.send(self.auth_server, 53, timeout=4)
         response = dnslib.DNSRecord.parse(response)
         if response.header.rcode == dnslib.RCODE.NOERROR:
             records = (response.rr, response.auth, response.ar)
@@ -80,8 +82,19 @@ class DNSServer:
         return response.pack()
 
 
+def parse_args():
+    parser = ArgumentParser(description='Сaching dns server')
+    parser.add_argument('-as', '--auth-server', type=str,
+                        help='authoritative server',
+                        default='213.180.193.1')
+    parser.add_argument('-cp', '--cache-path', type=Path,
+                        help='path to the cache file', default='cache')
+    return parser.parse_args()
+
+
 if __name__ == '__main__':
-    server = DNSServer(53, Path('cache'))
+    arguments = parse_args()
+    server = DNSServer(53, arguments.auth_server, arguments.cache_path)
     try:
         server.start()
     except KeyboardInterrupt:
