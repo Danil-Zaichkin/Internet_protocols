@@ -25,7 +25,10 @@
 ![help](https://github.com/Danil-Zaichkin/Internet_protocols/raw/main/img/dns_server_help.jpg)
 
 
-https://github.com/Danil-Zaichkin/Internet_protocols/assets/91212875/de1f968d-7077-4d4d-b52c-7f204f959c5e
+
+https://github.com/Danil-Zaichkin/Internet_protocols/assets/91212875/f0608555-fcc8-4aca-8aa2-cf8068768395
+
+
 
 ## Задача 3. Использование API
 - Использование API ВКонтакте для получения списка друзей заданного пользователя
