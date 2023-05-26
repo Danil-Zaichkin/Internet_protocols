@@ -23,6 +23,8 @@
 ## dns_server.py
 
 ![help](https://github.com/Danil-Zaichkin/Internet_protocols/raw/main/img/dns_server_help.jpg)
+
+
 https://github.com/Danil-Zaichkin/Internet_protocols/assets/91212875/de1f968d-7077-4d4d-b52c-7f204f959c5e
 
 ## Задача 3. Использование API
