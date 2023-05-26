@@ -24,3 +24,11 @@
 
 ![help](https://github.com/Danil-Zaichkin/Internet_protocols/raw/main/img/dns_server_help.jpg)
 ![help](https://github.com/Danil-Zaichkin/Internet_protocols/raw/main/img/dns_server_example.jpg)
+
+## Задача 3. Использование API
+- Использование API ВКонтакте для получения списка друзей заданного пользователя
+- Скрипт принимает user_id пользователя ВКонтакте
+
+##vk_parser.py
+
+![help](https://github.com/Danil-Zaichkin/Internet_protocols/raw/main/img/vk_pareser_work.mkv)

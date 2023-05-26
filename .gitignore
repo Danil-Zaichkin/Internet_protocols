@@ -3,3 +3,4 @@ venv
 *.txt
 cache
 __pycache__
+token.txt
