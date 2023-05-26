@@ -29,6 +29,6 @@
 - Использование API ВКонтакте для получения списка друзей заданного пользователя
 - Скрипт принимает user_id пользователя ВКонтакте
 
-##vk_parser.py
+## vk_parser.py
 
-![help](https://github.com/Danil-Zaichkin/Internet_protocols/raw/main/img/vk_pareser_work.mkv)
+![vk_parser_work](https://github.com/Danil-Zaichkin/Internet_protocols/raw/main/img/vk_pareser_work.mov)
