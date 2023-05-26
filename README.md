@@ -31,4 +31,4 @@
 
 ## vk_parser.py
 
-![vk_parser_work](https://github.com/Danil-Zaichkin/Internet_protocols/raw/main/img/vk_pareser_work.mov)
+https://github.com/Danil-Zaichkin/Internet_protocols/assets/91212875/20d11d69-2dab-4799-b852-21325bee5d46
