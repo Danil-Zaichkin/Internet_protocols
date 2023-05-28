@@ -79,6 +79,7 @@ class DNSServer:
                                        records_dict[rr.rname, rr.rtype],
                                        rr.ttl
                                        )
+        response.header.aa = False
         return response.pack()
 
 
