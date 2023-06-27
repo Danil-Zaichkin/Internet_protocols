@@ -99,7 +99,7 @@ def generate_boundary():
 class SMTPClient:
     def __init__(self, config_dict: dict, file_psw: str, file_msg: str):
 
-        self.smtp_host = "smtp.yandex.ru"
+        self.smtp_host = "smtp.mail.ru"
         self.smtp_port = 465
 
         self.user_password = read_txt_file(file_psw)
