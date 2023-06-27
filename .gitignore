@@ -1,6 +1,7 @@
 .idea
 venv
 *.txt
+*.json
 cache
 __pycache__
-token.txt
+smtp_content
